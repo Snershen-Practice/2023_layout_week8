@@ -1,0 +1,35 @@
+.contactPage {
+  &__char {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 196px;
+    @include min-lg {
+      height: 232px;
+      background-size: 75%;
+    }
+    &:nth-child(odd) {
+      background-position: 100% center;
+      @include min-lg {
+        background-position: 0% center;
+      }
+    }
+    &:nth-child(even) {
+      background-position: 0% center;
+      @include min-lg {
+        background-position: 100% center;
+      }
+    }
+    &-1 {
+      background-image: url(../images/mobile/diane_choose.png);
+    }
+    &-2 {
+      background-image: url(../images/mobile/felix_choose.png);
+    }
+    &-3 {
+      background-image: url(../images/mobile/karina_choose.png);
+    }
+    &-4 {
+      background-image: url(../images/mobile/vito_choose.png);
+    }
+  }
+}

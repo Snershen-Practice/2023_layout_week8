@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contact</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <main class="contactPage">
+      <section class="bg-primary-dark">
+        <div class="container">
+          <div class="row pb-13">
+            <div class="col-lg-3 mb-4">
+              <h2 class="ls--title fs-3 fw-bold pt-15">註冊</h2>
+            </div>
+            <div class="offset-lg-1 col-lg-4 pt-12">
+              <div class="d-flex align-items-center flex-column">
+                <img
+                  src="../assets/images/circle.png"
+                  alt="ALPHABOX"
+                  class="circle__link--ani mb-6"
+                  width="196px"
+                  height="196px"
+                />
+                <h3 class="font-display mb-7">ALPHABOX+</h3>
+                <a
+                  href="#"
+                  class="btn btn-outline-light w-100 rounded-pill mb-4 d-flex align-items-center justify-content-center"
+                  ><img src="../assets/images/apple 1.svg" alt="" class="me-2" />Continue with Apple</a
+                >
+                <a href="#" class="btn btn-outline-light w-100 rounded-pill mb-6"
+                  ><img src="../assets/images/google.svg" alt="" class="me-2" />Continue with Google</a
+                >
+                <p class="mb-6 line--hr">or</p>
+                <form action="" class="mb-12 mb-lg-0 w-100">
+                  <ul class="mb-4">
+                    <li class="mb-3">
+                      <input type="text" class="form-control bg-white rounded-0" placeholder="姓名" required />
+                    </li>
+                    <li class="mb-3">
+                      <input type="email" class="form-control bg-white rounded-0" placeholder="EMAIL" required />
+                    </li>
+                    <li class="mb-3">
+                      <input type="password" class="form-control bg-white rounded-0" placeholder="密碼" required />
+                    </li>
+                    <li class="form-check">
+                      <input
+                        class="form-check-input border-white rounded-0 border-2 border"
+                        type="checkbox"
+                        value=""
+                        id="law"
+                        required
+                      />
+                      <label class="form-check-label" for="law"
+                        >我已仔細閱讀<a
+                          href="#"
+                          class="text-decoration-underline link--light"
+                          data-bs-toggle="modal"
+                          data-bs-target="#lawModal"
+                          >相關條例</a
+                        ></label
+                      >
+                    </li>
+                  </ul>
+
+                  <button type="submit" class="btn btn-primary w-100 mb-2">
+                    <span class="material-symbols-outlined align-top me-1"> point_scan </span>建立帳號
+                  </button>
+                  <a href="login.html" class="d-block text-end link--light"
+                    >已有帳號嗎？前往<span class="text-decoration-underline">登入</span></a
+                  >
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Modal -->
+    <div class="modal fade" id="lawModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content position-relative">
+          <!-- <div class="modal-header border-0"> -->
+          <!-- <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1> -->
+          <button
+            type="button"
+            class="btn-close position-absolute top-0 start-100 translate-middle"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+          <!-- </div> -->
+          <div class="modal-body text-dark">
+            <h4>ALPHABOX+ 註冊條例</h4>
+            <p>
+              感謝您選擇使用ALPHABOX+品牌的Felix
+              3D立體投影機器人！為了確保您在使用我們的產品和服務時能夠享受到愉快的體驗，請在註冊帳號前，仔細閱讀以下註冊帳號使用規範條例。
+            </p>
+            <p>
+              感謝您選擇使用ALPHABOX+品牌的Felix
+              3D立體投影機器人！為了確保您在使用我們的產品和服務時能夠享受到愉快的體驗，請在註冊帳號前，仔細閱讀以下註冊帳號使用規範條例。
+            </p>
+            <h5>第1條：帳號註冊</h5>
+            <ol>
+              <li>註冊帳號時，請確保提供真實、準確、完整的個人資料，如發現虛假資料，我們有權隨時終止您的帳號。</li>
+              <li>用戶需設定一組安全的帳號密碼，並妥善保管。如因用戶原因導致帳號密碼遭盜用，我們將不承擔任何責任。</li>
+              <li>
+                每位用戶僅限註冊一個帳號，禁止註冊多個帳號。如經查證有用戶註冊多個帳號的行為，我們有權對其帳號進行封禁處理。
+              </li>
+            </ol>
+            <h5>第2條：帳號使用</h5>
+            <ol>
+              <li>
+                用戶不得在帳號中發布任何違法、侵權、色情、暴力、恐怖或種族歧視等違反社會公序良俗的內容。如有違反，我們有權對相關帳號進行封禁處理。
+              </li>
+              <li>
+                用戶不得利用帳號進行任何形式的商業活動、廣告宣傳，或未經授權的盈利行為。如有違反，我們有權對相關帳號進行封禁處理。
+              </li>
+              <li>
+                用戶應尊重他人的知識產權，不得在帳號中發布他人的著作權、專利權、商標權等知識產權受保護的內容。如有侵權行為，我們有權對相關帳號進行封禁處理。
+              </li>
+            </ol>
+            <h5>第3條：帳號安全</h5>
+            <ol>
+              <li>
+                用戶應妥善保管自己的帳號密碼，不得將帳號密碼告知他人。如因用戶原因導致帳號密碼遭他人盜用，我們將不承擔任何責任。
+              </li>
+              <li>
+                如用戶發現自己的帳號遭他人盜用或存在安全隱患，應立即通知我們，以便我們採取相應措施保護您的帳號安全。
+              </li>
+            </ol>
+            <h5>第3條：帳號安全</h5>
+            <ol>
+              <li>
+                用戶應妥善保管自己的帳號密碼，不得將帳號密碼告知他人。如因用戶原因導致帳號密碼遭他人盜用，我們將不承擔任何責任。
+              </li>
+              <li>
+                如用戶發現自己的帳號遭他人盜用或存在安全隱患，應立即通知我們，以便我們採取相應措施保護您的帳號安全。
+              </li>
+            </ol>
+            <h5>第3條：帳號安全</h5>
+            <ol>
+              <li>
+                用戶應妥善保管自己的帳號密碼，不得將帳號密碼告知他人。如因用戶原因導致帳號密碼遭他人盜用，我們將不承擔任何責任。
+              </li>
+              <li>
+                如用戶發現自己的帳號遭他人盜用或存在安全隱患，應立即通知我們，以便我們採取相應措施保護您的帳號安全。
+              </li>
+            </ol>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <%- include('./layout/footer'); -%>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

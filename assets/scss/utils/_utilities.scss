@@ -1,0 +1,49 @@
+$utilities: (
+  "link-opacity": (
+    css-var: true,
+    class: link-opacity,
+    state: hover,
+    values: (
+      10: 0.1,
+      25: 0.25,
+      50: 0.5,
+      75: 0.75,
+      100: 1,
+    ),
+  ),
+  "object-fit": (
+    responsive: true,
+    property: object-fit,
+    values: (
+      contain: contain,
+      cover: cover,
+      fill: fill,
+      scale: scale-down,
+      none: none,
+    ),
+  ),
+  "font-size": (
+    rfs: true,
+    property: font-size,
+    class: fs,
+    values: $font-sizes,
+    responsive: true,
+  ),
+  "text-decoration": (
+    property: text-decoration,
+    values: none underline line-through,
+  ),
+);
+
+// $utilities: map-merge(
+//   $utilities,
+//   (
+//     "border":
+//       map-merge(
+//         map-get($utilities, "border"),
+//         (
+//           responsive: true,
+//         )
+//       ),
+//   )
+// );

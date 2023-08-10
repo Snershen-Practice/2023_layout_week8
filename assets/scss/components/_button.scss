@@ -1,0 +1,63 @@
+.u-tab-btn {
+  padding: 2px 3.5vw;
+  border: 1px solid $white;
+  border-radius: 40px;
+  color: $white;
+  margin-left: 4px;
+  margin-right: 4px;
+  background: transparent;
+  font-family: "Shrikhand", cursive;
+  font-size: 1rem;
+  @include min-md {
+    padding: 4px 40px;
+    font-size: 1.5rem;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+  @include min-xl {
+    padding: 4px 80px;
+  }
+  &:hover {
+    color: $primary;
+    background: $white;
+  }
+  &.active {
+    color: $black;
+    background: $white;
+  }
+}
+
+.u-btn-light {
+  background: $white;
+  color: $black;
+  position: relative;
+  border-radius: 4px;
+
+  span {
+    padding: 8px 16px;
+    margin-right: 4px;
+    position: relative;
+    z-index: 10;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: $primary;
+    color: $white;
+    border: 1px solid $white;
+    transition: 1s;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+  &:hover {
+    color: $white;
+    &::after {
+      width: 100%;
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 0px;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+// .header {
+//   a:hover {
+//     color: $white;
+//     opacity: 0.8;
+//   }
+// }
+
+// .navbar-toggler-icon {
+//   background: none;
+// }
+
+.header__menu {
+  background: linear-gradient(180deg, $primary 0%, #11002d 100%);
+  @include min-lg {
+    background: none;
+  }
+}
+
+.header__border {
+  //   position: relative;
+  &::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    top: 82px;
+    left: 0;
+    background: $white;
+    @include min-lg {
+      display: none;
+    }
+  }
+}

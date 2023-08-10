@@ -1,0 +1,51 @@
+.newsPage {
+  &__img {
+    max-height: 108px;
+    @include min-md {
+      max-height: 200px;
+    }
+    @include min-lg {
+      max-height: 100%;
+    }
+  }
+  .page-link {
+    position: relative;
+    border-bottom: solid 1px $white;
+    background: none;
+    border: none;
+    font-size: 24px;
+    padding-right: 16px;
+    padding-left: 16px;
+    color: $white;
+    box-shadow: none;
+    &::after {
+      content: "";
+      opacity: 0;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 10px;
+      height: 1px;
+      background-color: $white;
+      display: inline-block;
+      margin-top: 10px;
+    }
+    &:hover {
+      &::after {
+        opacity: 0.5;
+      }
+    }
+  }
+  .page-item.active {
+    .page-link::after {
+      opacity: 1;
+    }
+  }
+  &-inner {
+    &__img {
+      height: calc(100% - 48px);
+      max-height: 506px;
+    }
+  }
+}

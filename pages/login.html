@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contact</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <main class="contactPage">
+      <section class="bg-primary-dark">
+        <div class="container">
+          <div class="row pb-13">
+            <div class="col-lg-3 mb-4">
+              <h2 class="ls--title fs-3 fw-bold pt-15">登入</h2>
+            </div>
+            <div class="offset-lg-1 col-lg-4 pt-12">
+              <div class="d-flex align-items-center flex-column">
+                <img
+                  src="../assets/images/circle.png"
+                  alt="ALPHABOX"
+                  class="circle__link--ani mb-6"
+                  width="196px"
+                  height="196px"
+                />
+                <h2 class="font-display mb-7">ALPHABOX+</h2>
+                <a
+                  href="#"
+                  class="btn btn-outline-light w-100 rounded-pill mb-4 d-flex align-items-center justify-content-center"
+                  ><img src="../assets/images/apple 1.svg" alt="" class="me-2" />Continue with Apple</a
+                >
+                <a href="#" class="btn btn-outline-light w-100 rounded-pill mb-6"
+                  ><img src="../assets/images/google.svg" alt="" class="me-2" />Continue with Google</a
+                >
+                <p class="mb-6 line--hr">or</p>
+                <form action="" class="mb-12 mb-lg-0 w-100">
+                  <ul class="mb-4">
+                    <li class="mb-3">
+                      <input type="email" class="form-control bg-white rounded-0" placeholder="EMAIL" required />
+                    </li>
+                    <li class="mb-3">
+                      <input type="password" class="form-control bg-white rounded-0" placeholder="密碼" required />
+                    </li>
+                  </ul>
+
+                  <button type="submit" class="btn btn-primary w-100 mb-2">
+                    <span class="material-symbols-outlined align-top me-1"> point_scan </span>立即登入
+                  </button>
+                  <a href="login.html" class="d-block text-end link--light"
+                    ><span class="text-decoration-underline">忘記密碼</span></a
+                  >
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <%- include('./layout/footer'); -%>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

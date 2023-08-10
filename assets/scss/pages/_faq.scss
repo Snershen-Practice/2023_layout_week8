@@ -1,0 +1,36 @@
+// .faq__page {
+//   background: #a8a7a8;
+// }
+
+.line--dotted {
+  position: relative;
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to right, $white 0%, $white 30%, transparent 30%), $fourth;
+    background-size: 20px 5px;
+    height: 5px;
+    width: 100%;
+  }
+}
+
+.outline--none {
+  outline: none;
+}
+
+.accordion-button.collapsed::after {
+  background-image: url(../images/add.svg);
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url(../images/remove.svg);
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contact</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <main class="contactPage">
+      <section class="pt-15 bg-primary-dark">
+        <div class="container">
+          <div class="row pb-13">
+            <div class="col-12 mb-4">
+              <h2 class="ls--title fs-3 fw-bold">聯絡我們</h2>
+            </div>
+            <div class="offset-lg-1 col-lg-6">
+              <p class="mb-12">
+                您的意見與需求對我們至關重要！如果您對 ALPHABOX+ 有任何疑問、建議或需求，請隨時填寫以下表單，我們將在 24
+                小時內回覆您。您的寶貴意見將幫助我們不斷改進產品與服務，為您帶來更優質的體驗。
+              </p>
+              <p class="mb-12">我們期待您的來信與來電，竭誠為您解答。讓我們攜手共創更美好的未來！</p>
+              <form action="" class="mb-12 mb-lg-0">
+                <ul class="mb-4">
+                  <li class="mb-3">
+                    <input type="text" class="form-control bg-white rounded-0" placeholder="姓名" required />
+                  </li>
+                  <li class="mb-3">
+                    <input type="email" class="form-control bg-white rounded-0" placeholder="EMAIL" required />
+                  </li>
+                  <li class="mb-3">
+                    <input type="text" class="form-control bg-white rounded-0" placeholder="聯絡電話" required />
+                  </li>
+                  <li class="mb-3">
+                    <textarea
+                      class="form-control bg-white rounded-0"
+                      rows="3"
+                      placeholder="COMMENTS"
+                      required
+                    ></textarea>
+                  </li>
+                </ul>
+                <button type="submit" class="btn btn-primary w-100">
+                  <span class="material-symbols-outlined align-top me-1"> point_scan </span>送出
+                </button>
+              </form>
+            </div>
+            <div class="offset-lg-1 col-lg-3">
+              <ul>
+                <li class="mb-9">
+                  <h3 class="fs-10 opacity-50">客服時間</h3>
+                  <time>週一至週五 09:00-18:00</time>
+                </li>
+                <li class="mb-9">
+                  <h3 class="fs-10 opacity-50">聯絡地址</h3>
+                  <a href="#">高雄市新興區民生一路 56 號</a>
+                </li>
+                <li>
+                  <h3 class="fs-10 opacity-50">聯絡地址</h3>
+                  <a href="tel:+886-2-12345678">+886-2-12345678</a>
+                  <a href="mailto:customer@alphabox.com">mailto:customer@alphabox.com</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <ul class="d-flex border-top justify-content-end">
+            <li><a href="#" class="pt-9 pb-10 px-8">INSTAGRAM</a></li>
+            <li><a href="#" class="pt-9 pb-10 px-8">FACEBOOK</a></li>
+            <li><a href="#" class="pt-9 pb-10 px-8">TWITTER</a></li>
+            <li><a href="#" class="pt-9 pb-10 ps-8">LINKEDIN</a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="bg-white text-black pt-15 pb-14">
+        <div class="container">
+          <h2 class="ls--title fw-bold mb-6 fs-3">選擇自己<br class="d-block d-lg-none" />要的角色</h2>
+          <h3 class="fw-bold mb-6"><span class="text-purple me-6">20K+</span>使用者喜歡我們的服務</h3>
+        </div>
+        <ul>
+          <li class="contactPage__char contactPage__char-1 position-relative link--opacity" data-aos="fade-right">
+            <div class="container h-100">
+              <div class="row align-items-center h-100">
+                <h3 class="font-display text-white fs-6 fs-lg-3">
+                  <a href="#" class="stretched-link link--light">Diane</a>
+                </h3>
+              </div>
+            </div>
+          </li>
+          <li class="contactPage__char contactPage__char-2 position-relative link--opacity" data-aos="fade-left">
+            <div class="container h-100">
+              <div class="row align-items-center h-100">
+                <h3 class="font-display text-white fs-6 fs-lg-3 text-end">
+                  <a href="#" class="stretched-link link--light">Felix</a>
+                </h3>
+              </div>
+            </div>
+          </li>
+          <li class="contactPage__char contactPage__char-3 position-relative link--opacity" data-aos="fade-right">
+            <div class="container h-100">
+              <div class="row align-items-center h-100">
+                <h3 class="font-display text-white fs-6 fs-lg-3">
+                  <a href="#" class="stretched-link link--light">Karina</a>
+                </h3>
+              </div>
+            </div>
+          </li>
+          <li class="contactPage__char contactPage__char-4 position-relative link--opacity" data-aos="fade-left">
+            <div class="container h-100">
+              <div class="row align-items-center h-100">
+                <h3 class="font-display text-white fs-6 fs-lg-3 text-end">
+                  <a href="#" class="stretched-link link--light">Vito</a>
+                </h3>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <%- include('./layout/footer'); -%>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

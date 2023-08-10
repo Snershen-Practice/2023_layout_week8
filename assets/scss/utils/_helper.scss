@@ -1,0 +1,171 @@
+* {
+  // outline: solid 1px;
+}
+
+.bg-linear {
+  background: linear-gradient(180deg, $primary 0%, #11002d 100%);
+}
+
+.bg-radial--dark {
+  background: radial-gradient(50% 50% at 50% 50%, #300871 0%, #000 100%);
+}
+
+.bg-radial--light {
+  background: radial-gradient(50% 50% at 50% 50%, #000 0%, #28085c 100%);
+}
+
+.font-display {
+  font-family: "Shrikhand", cursive;
+}
+
+.ls--subtitle {
+  letter-spacing: 0.5em;
+}
+
+.ls--title {
+  letter-spacing: 1em;
+}
+
+.link--light {
+  color: $white;
+  &:hover {
+    color: $white;
+    opacity: 0.8;
+  }
+}
+
+.link--dark {
+  color: $secondary;
+  &:hover {
+    color: $secondary;
+    opacity: 0.5;
+  }
+}
+
+.bg-primary-dark {
+  background: $third;
+}
+
+.font-num-display {
+  font-size: 25rem;
+  font-family: "Saira Extra Condensed", sans-serif;
+}
+
+.circle__link {
+  user-select: none;
+
+  &--ani {
+    animation: rotateAni 12s infinite linear;
+    transition: 0.5s;
+
+    @keyframes rotateAni {
+      to {
+        rotate: 360deg;
+      }
+    }
+  }
+  &:hover {
+    img {
+      scale: 0.88;
+    }
+  }
+}
+
+.link__bottomLine {
+  &::after {
+    content: "";
+    width: 100%;
+    display: block;
+    height: 2px;
+    background: $black;
+    transition: 0.5s;
+  }
+  &--ani {
+    &::after {
+      width: 0%;
+    }
+    &:hover {
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.link--translateX {
+  span {
+    transition: 0.5s;
+  }
+  &:hover {
+    color: $white;
+    opacity: 0.8;
+  }
+  &:hover span {
+    transform: translateX(-15px);
+  }
+}
+
+.link--translateLT {
+  span {
+    transition: 0.5s;
+  }
+  &:hover {
+    span {
+      transform: translate(-5px, -5px);
+    }
+  }
+}
+
+.text-purple {
+  color: #6e01f8;
+}
+
+.link--opacity {
+  transition: 0.5s;
+  &:hover[data-aos^="fade"][data-aos^="fade"].aos-animate {
+    opacity: 0.8 !important;
+  }
+}
+
+.line--hr {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+
+    top: 50%;
+    display: block;
+    height: 1px;
+    width: 45%;
+    background: $white;
+  }
+  &::before {
+    left: 0;
+  }
+  &::after {
+    right: 0;
+  }
+}
+
+.ls--overflow {
+  margin-left: 1em;
+  width: 98%;
+  overflow: hidden;
+}
+
+//bootstrap
+.modal-dialog-scrollable .modal-content {
+  overflow: visible;
+}
+.btn-close {
+  background: url(../images/modal-close.svg);
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+  opacity: 1;
+  box-shadow: none;
+  z-index: map-get($z-index, modal-close-btn);
+}

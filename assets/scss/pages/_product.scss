@@ -1,0 +1,41 @@
+.product {
+  &__img {
+    height: 375px;
+    width: 100%;
+    object-fit: cover;
+    @include min-lg {
+      //   height: auto;
+      height: calc(100vh - 120px);
+    }
+  }
+  &__arrow {
+    position: relative;
+    left: 50%;
+    margin-top: 16px;
+    @include min-lg {
+      position: absolute;
+      z-index: 100;
+      left: 50%;
+      bottom: 0;
+    }
+  }
+  &-swiper {
+    .swiper-button-next,
+    .swiper-button-prev {
+      width: 80px;
+      height: 80px;
+    }
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+      content: "";
+      background-image: url(../images/arrow_circle_right.svg);
+      width: 80px;
+      height: 80px;
+      display: inline-block;
+      background-size: cover;
+    }
+    .swiper-button-prev::after {
+      transform: scale(-1);
+    }
+  }
+}
