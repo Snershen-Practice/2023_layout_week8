@@ -5,7 +5,7 @@
     background-repeat: no-repeat;
   }
   &--transform {
-    transform: translateY(104px);
+    transform: translateY(300px);
   }
   &__title {
     margin-bottom: -9vw;
@@ -162,11 +162,22 @@
   }
 }
 
-.ai-card {
+.ai__card {
   background-size: cover;
-  background-position: center;
+  background-position: center top;
+
   background-repeat: no-repeat;
   position: relative;
+  transition: 0.5s;
+  cursor: crosshair;
+  @include min-lg {
+    background-position: center;
+  }
+  &-text {
+    position: relative;
+    z-index: 10;
+    transition: 0.5s;
+  }
   &::before {
     content: "";
     width: 100%;
@@ -176,10 +187,16 @@
     top: 0;
     left: 0;
     background: $black;
-    z-index: -1;
+    transition: 0.5s;
+    z-index: 0;
   }
-  &:hover::before {
-    opacity: 0;
+  &:hover {
+    &::before {
+      opacity: 0;
+    }
+    .ai__card-text {
+      transform: scale(0.9);
+    }
   }
   &-1:hover {
     background-image: url(../images/diane_vertical.png);
@@ -246,34 +263,34 @@
 
 .comment-swiper {
   .swiper-slide {
-    width: 30%;
+    // width: 100%;
+    @include min-lg {
+      width: 25%;
+    }
   }
 
-  .swiper-slide:nth-child(2n) {
-    width: 30%;
-  }
-
-  .swiper-slide:nth-child(3n) {
-    width: 30%;
-  }
   .swiper-scrollbar {
     z-index: 10;
     left: 0;
     bottom: 100px;
     background: rgba(255, 255, 255, 0.2);
-    transform: scaleX(0.5) translateX(-50%);
+    // transform: scaleX(0.5) translateX(-50%);
 
     &-drag {
-      // width: 25px !important;
-
       background: $white;
     }
+  }
+  .swiper-horizontal > .swiper-scrollbar,
+  .swiper-scrollbar.swiper-scrollbar-horizontal {
+    max-width: 856px;
   }
 }
 
 .slider-container {
+  margin-left: 8vw;
   @include min-lg {
-    max-width: 1600px;
-    margin-left: auto;
+    margin-left: 16vw;
+    // max-width: 1600px;
+    // margin-left: auto;
   }
 }

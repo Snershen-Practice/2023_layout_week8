@@ -156,6 +156,21 @@
   overflow: hidden;
 }
 
+.deco__circle {
+  background: $white;
+  border-radius: 50%;
+}
+
+.deco__circle--lg {
+  width: 16px;
+  height: 16px;
+}
+
+.deco__circle--sm {
+  width: 8px;
+  height: 8px;
+}
+
 //bootstrap
 .modal-dialog-scrollable .modal-content {
   overflow: visible;
@@ -168,4 +183,11 @@
   opacity: 1;
   box-shadow: none;
   z-index: map-get($z-index, modal-close-btn);
+}
+
+.border-left {
+  border-right: none;
+  @include min-lg {
+    border-right: solid 1px $white;
+  }
 }

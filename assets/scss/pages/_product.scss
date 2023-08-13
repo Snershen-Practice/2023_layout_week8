@@ -22,17 +22,25 @@
   &-swiper {
     .swiper-button-next,
     .swiper-button-prev {
-      width: 80px;
-      height: 80px;
+      width: 48px;
+      height: 48px;
+      @include min-lg {
+        width: 80px;
+        height: 80px;
+      }
     }
     .swiper-button-next::after,
     .swiper-button-prev::after {
       content: "";
       background-image: url(../images/arrow_circle_right.svg);
-      width: 80px;
-      height: 80px;
+      width: 48px;
+      height: 48px;
       display: inline-block;
       background-size: cover;
+      @include min-lg {
+        width: 80px;
+        height: 80px;
+      }
     }
     .swiper-button-prev::after {
       transform: scale(-1);
