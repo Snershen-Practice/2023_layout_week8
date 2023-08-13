@@ -9,8 +9,8 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
     />
-    <script type="module" crossorigin src="/web-layout-training-vite/assets/main-04e794fe.js"></script>
-    <link rel="stylesheet" href="/web-layout-training-vite/assets/main-336cd8b0.css">
+    <script type="module" crossorigin src="/web-layout-training-vite/assets/main-6c3f22a9.js"></script>
+    <link rel="stylesheet" href="/web-layout-training-vite/assets/main-65dbf280.css">
   </head>
   <body>
     <header class="header navbar pb-0 navbar-expand-lg bg-primary py-lg-4 border-bottom">
@@ -144,8 +144,8 @@
     </div>
     <!-- content -->
     <div class="position-relative">
-      <div class="tab-content" id="pills-tabContent">
-        <div
+      <ul class="tab-content" id="pills-tabContent">
+        <li
           class="tab-pane fade show active"
           id="pills-product1"
           role="tabpanel"
@@ -167,8 +167,8 @@
             </div>
             <div class="col-lg-6 px-0">
               <div class="ms-lg-9 ms-3 pt-4 pt-lg-0">
-                <h2 class="font-display mb-6">Diane</h2>
-                <p class="mb-5">知識型<br />學術領導/知識分享/智能問答</p>
+                <h2 class="font-display mb-6 fs-3">Diane</h2>
+                <p class="mb-5"><span class="fw-bold">知識型</span><br />學術領導/知識分享/智能問答</p>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="306"
@@ -208,16 +208,25 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="tab-pane fade" id="pills-product2" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+        </li>
+        <li class="tab-pane fade" id="pills-product2" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
           <div class="row mx-0 align-items-center">
-            <div class="col-lg-6 px-0">
-              <img src="/web-layout-training-vite/assets/felix_square1-48e53108.png" alt="" class="product__img img-fluid" />
+            <div class="col-lg-6 px-0 swiper product-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="/web-layout-training-vite/assets/felix_square1-48e53108.png" alt="" class="product__img img-fluid" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="/web-layout-training-vite/assets/felix_square2-14b06083.png" alt="" class="product__img img-fluid" />
+                </div>
+              </div>
+              <div class="swiper-button-next position-absolute"></div>
+              <div class="swiper-button-prev"></div>
             </div>
             <div class="col-lg-6 px-0">
               <div class="ms-lg-9 ms-3 pt-4 pt-lg-0">
-                <h2 class="font-display mb-6">Diane</h2>
-                <p class="mb-5">知識型<br />學術領導/知識分享/智能問答</p>
+                <h2 class="font-display mb-6 fs-3">Felix</h2>
+                <p class="mb-5"><span class="fw-bold">娛樂型</span><br />音樂播放/語音互動/遊戲陪伴</p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="306" height="14" viewBox="0 0 306 14" fill="none">
                   <path
                     d="M283.55 13.8938L290.486 8.24316H0.0500488V6.3596H290.486L283.55 0.708916L305.825 7.30138L283.55 13.8938Z"
@@ -227,16 +236,25 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="tab-pane fade" id="pills-product3" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+        </li>
+        <li class="tab-pane fade" id="pills-product3" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
           <div class="row mx-0 align-items-center">
-            <div class="col-lg-6 px-0">
-              <img src="/web-layout-training-vite/assets/karina_square1-3af8d52b.png" alt="" class="product__img img-fluid" />
+            <div class="col-lg-6 px-0 swiper product-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="/web-layout-training-vite/assets/karina_square1-3af8d52b.png" alt="" class="product__img img-fluid" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="/web-layout-training-vite/assets/karina_square2-4f662d52.png" alt="" class="product__img img-fluid" />
+                </div>
+              </div>
+              <div class="swiper-button-next position-absolute"></div>
+              <div class="swiper-button-prev"></div>
             </div>
             <div class="col-lg-6 px-0">
               <div class="ms-lg-9 ms-3 pt-4 pt-lg-0">
-                <h2 class="font-display mb-6">Diane</h2>
-                <p class="mb-5">知識型<br />學術領導/知識分享/智能問答</p>
+                <h2 class="font-display mb-6 fs-3">Karina</h2>
+                <p class="mb-5"><span class="fw-bold">生活型</span><br />健康提醒/日程安排/智能家居</p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="306" height="14" viewBox="0 0 306 14" fill="none">
                   <path
                     d="M283.55 13.8938L290.486 8.24316H0.0500488V6.3596H290.486L283.55 0.708916L305.825 7.30138L283.55 13.8938Z"
@@ -246,16 +264,25 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="tab-pane fade" id="pills-product4" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+        </li>
+        <li class="tab-pane fade" id="pills-product4" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
           <div class="row mx-0 align-items-center">
-            <div class="col-lg-6 px-0">
-              <img src="/web-layout-training-vite/assets/vito_square1-4497c642.png" alt="" class="product__img img-fluid" />
+            <div class="col-lg-6 px-0 swiper product-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="/web-layout-training-vite/assets/vito_square1-4497c642.png" alt="" class="product__img img-fluid" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="/web-layout-training-vite/assets/vito_square2-d4cc2c54.png" alt="" class="product__img img-fluid" />
+                </div>
+              </div>
+              <div class="swiper-button-next position-absolute"></div>
+              <div class="swiper-button-prev"></div>
             </div>
             <div class="col-lg-6 px-0">
               <div class="ms-lg-9 ms-3 pt-4 pt-lg-0">
-                <h2 class="font-display mb-6">Diane</h2>
-                <p class="mb-5">知識型<br />學術領導/知識分享/智能問答</p>
+                <h2 class="font-display mb-6 fs-3">Vito</h2>
+                <p class="mb-5"><span class="fw-bold">情感型</span><br />情感識別/心情分析/心靈支持</p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="306" height="14" viewBox="0 0 306 14" fill="none">
                   <path
                     d="M283.55 13.8938L290.486 8.24316H0.0500488V6.3596H290.486L283.55 0.708916L305.825 7.30138L283.55 13.8938Z"
@@ -265,8 +292,8 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
+        </li>
+      </ul>
       <a href="#product-content" class="circle__link link--light product__arrow translate-middle-x mb-lg-12 mb-6"
         ><img src="/web-layout-training-vite/assets/circle2-ec2fa90f.svg" alt="" class="circle__link--ani" width="132px" /><span
           class="start-50 top-50 translate-middle position-absolute"
@@ -355,51 +382,64 @@
 
         <ul class="row">
           <li class="col-lg-4">
-            <div
-              class="comment__card p-9 d-flex flex-column justify-content-between mb-6 mb-lg-0"
-              data-aos="fade-up"
-              data-aos-delay="300"
-            >
+            <div class="comment__card p-9 d-flex flex-column justify-content-between mb-6 mb-lg-0" data-aos="fade-up">
               <div>
-                <p class="mb-7">Zona・Taipei</p>
+                <p class="mb-7 d-flex align-items-center">
+                  Zichi <span class="deco__circle deco__circle--sm d-inline-block mx-2"></span> Kaohsiung
+                </p>
                 <p>
-                  ALPHABOX+
-                  真的很夯！每次把它打開，感覺就像是身臨其境一樣。它陪我度過了很多寂寞的時光，讓我在家裡也能享受到優質的休閒時光。
+                  自從家裡有了Felix，孩子們的學習興趣提高了不少，他們都喜歡透過Felix的3D立體投影來探索新知識，家庭氛圍變得更加和樂融融！
                 </p>
               </div>
-              <p>ALPHABOX+ Dianne</p>
+              <div class="d-flex align-items-center">
+                <div class="deco__circle deco__circle--lg d-inline-block me-4"></div>
+                <div class="deco__circle deco__circle--lg d-inline-block me-4"></div>
+                <p>ALPHABOX+ Felix</p>
+              </div>
             </div>
           </li>
           <li class="col-lg-4">
             <div
               class="comment__card p-9 d-flex flex-column justify-content-between mb-6 mb-lg-0"
               data-aos="fade-up"
-              data-aos-delay="600"
+              data-aos-delay="200"
             >
               <div>
-                <p class="mb-7">Zona・Taipei</p>
+                <p class="mb-7 d-flex align-items-center">
+                  Lee <span class="deco__circle deco__circle--sm d-inline-block mx-2 bg-secondary"></span> Chiayi
+                </p>
                 <p>
-                  ALPHABOX+
-                  真的很夯！每次把它打開，感覺就像是身臨其境一樣。它陪我度過了很多寂寞的時光，讓我在家裡也能享受到優質的休閒時光。
+                  自從公司引入 Felix，員工的工作效率提升了很多。Felix
+                  不僅能快速回應我們的需求，還可以協助我們做各種商業展示，真的是企業的好幫手！
                 </p>
               </div>
-              <p>ALPHABOX+ Dianne</p>
+              <div class="d-flex align-items-center">
+                <div class="deco__circle deco__circle--lg d-inline-block bg-secondary me-4"></div>
+                <div class="deco__circle deco__circle--lg d-inline-block bg-secondary me-4"></div>
+                <p>ALPHABOX+ Felix</p>
+              </div>
             </div>
           </li>
           <li class="col-lg-4">
             <div
               class="comment__card p-9 d-flex flex-column justify-content-between mb-6 mb-lg-0"
               data-aos="fade-up"
-              data-aos-delay="900"
+              data-aos-delay="400"
             >
               <div>
-                <p class="mb-7">Zona・Taipei</p>
+                <p class="mb-7 d-flex align-items-center">
+                  瑞 <span class="deco__circle deco__circle--sm d-inline-block mx-2"></span> Taipei
+                </p>
                 <p>
-                  ALPHABOX+
-                  真的很夯！每次把它打開，感覺就像是身臨其境一樣。它陪我度過了很多寂寞的時光，讓我在家裡也能享受到優質的休閒時光。
+                  Felix
+                  讓教學變得更生動有趣，學生們在課堂上的參與度和學習效果都有顯著提升。我非常推薦Felix給所有的教育工作者！
                 </p>
               </div>
-              <p>ALPHABOX+ Dianne</p>
+              <div class="d-flex align-items-center">
+                <div class="deco__circle deco__circle--lg d-inline-block me-4"></div>
+                <div class="deco__circle deco__circle--lg d-inline-block me-4"></div>
+                <p>ALPHABOX+ Felix</p>
+              </div>
             </div>
           </li>
         </ul>
